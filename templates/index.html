@@ -1,0 +1,108 @@
+<!-- <html> 
+<body> 
+    <h3>Customer Segmentation</h3> 
+  
+<div> 
+  <form action="/result" method="POST"> 
+    <label for="Annual Income">Annual Income</label> 
+    <input type="text" id="Annual Income" name="Annual Income"> 
+    <br>
+    <label for="Spending Score (1-100)">Spending Score (1-100)</label> 
+    <input type="text" id="Spending Score (1-100)" name="Spending Score (1-100)"> 
+    <br>       
+    <input type="submit" value="Submit"> 
+  </form> 
+</div> 
+</body> 
+</html> -->
+
+<html>
+
+<head>
+    <title>Customer Segmentation</title>
+
+</head>
+
+<body bgcolor=#a3cfb4>
+
+    <style>
+        .homepredict {
+            background: rgb(81, 122, 158);
+            width: 650px;
+            margin: 200px 0px 100px 600px;
+            color: black;
+            font-size: 20;
+        }
+        
+        #name {
+            width: 200px;
+            border: none;
+            border-radius: 3px;
+            outline: 0;
+            padding: 7px;
+        }
+        
+        .image {
+            background: rgb(192, 232, 223);
+            width: 600px;
+            margin: 0px 0px 600px 0px;
+        }
+    </style>
+    <style>
+        button {
+            padding: 10px 50px;
+            margin: 15px 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+        }
+        
+        button:hover {
+            opacity: 0.5;
+        }
+    </style>
+
+    <center>
+        <h1 style="background: rgb(81, 122, 158);"><b>Customer Segmentation</b></h1>
+    </center>
+
+
+
+
+    <img src='static/image2.png' ALIGN="left" width="610px" height="700px" style="margin-left: 10px;">
+
+    <center>
+
+        <div class="homepredict">
+            <div class="container">
+                <form method="POST" action="{{url_for('result')}}">
+
+                    <br>
+
+
+                    <label><b>Annual Income : </b></label> <br>
+                    <br>
+                    <input type="text" , name='Annual Income (k$)' , placeholder="" id='name'> <br><br>
+
+
+                    <label><b>Spending Score  :   </b></label> <br>
+                    <br>
+                    <input type="text" , name='Spending Score (1-100) ' , placeholder="" id='name'> <br><br>
+
+
+
+                    <button type="submit" class="button" value='Predict'>
+                    <span><b>Predict</b></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </center>
+
+
+
+</body>
+
+</html>

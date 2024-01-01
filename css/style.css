@@ -1,0 +1,15 @@
+.container {
+    width: 200px;
+    clear: both;
+    position: relative;
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+}

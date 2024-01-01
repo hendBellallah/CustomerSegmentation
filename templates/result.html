@@ -1,0 +1,47 @@
+<!-- <!doctype html>
+<html>
+<body>
+<h1> {{ prediction }}</h1>
+</body>
+</html> -->
+
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1> Segmentation Result </h1>
+        <h2> {{ prediction }}</h2>
+        <img src='static/image2.png' width="550px">
+
+        <br><br>
+
+        <style>
+            button {
+                padding: 10px 50px;
+                margin: 15px 4px;
+                cursor: pointer;
+                text-transform: uppercase;
+                text-align: center;
+                position: relative;
+            }
+            
+            button:hover {
+                opacity: 0.5;
+            }
+        </style>
+
+        <a href='/'>
+            <!-- <input type="button" value="go back to home page" /> -->
+            <button type="submit" class="button" value='go back to home page'>
+                <span><b>Go back to home page</b></span>
+            </button>
+        </a>
+
+
+    </center>
+
+</body>
+
+</html>
